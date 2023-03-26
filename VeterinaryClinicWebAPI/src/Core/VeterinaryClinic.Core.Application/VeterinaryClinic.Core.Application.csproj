@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="AutoMapper" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="Behaviours\" />
+    <None Remove="DTOs\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Features\" />
+    <None Remove="Filters\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Mapping\" />
+    <None Remove="Wrappers\" />
+    <None Remove="Features\Owners\Commands\DeleteOwnerCommand\" />
+    <None Remove="Features\Owners\Commands\UpdateOwnerCommand\" />
+    <None Remove="Features\Owners\Queries\" />
+    <None Remove="Features\Owners\Queries\GetAllOwners\" />
+    <None Remove="Features\Owners\Queries\GetOwnerbyId\" />
+    <None Remove="Parameters\" />
+    <None Remove="Specifications\" />
+    <None Remove="Enims\" />
+    <None Remove="DTOs\Users\" />
+    <None Remove="Features\Users\" />
+    <None Remove="Features\Users\Commands\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
+    <PackageReference Include="Ardalis.Specification" Version="6.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Behaviours\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Features\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Wrappers\" />
+    <Folder Include="Features\Owners\Commands\DeleteOwnerCommand\" />
+    <Folder Include="Features\Owners\Commands\UpdateOwnerCommand\" />
+    <Folder Include="Features\Owners\Queries\" />
+    <Folder Include="Features\Owners\Queries\GetAllOwners\" />
+    <Folder Include="Features\Owners\Queries\GetOwnerbyId\" />
+    <Folder Include="Parameters\" />
+    <Folder Include="Specifications\" />
+    <Folder Include="Enums\" />
+    <Folder Include="DTOs\Users\" />
+    <Folder Include="Features\Users\" />
+    <Folder Include="Features\Users\Commands\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VeterinaryClinic.Core.Domain\VeterinaryClinic.Core.Domain.csproj" />
+  </ItemGroup>
+</Project>
